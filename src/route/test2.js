@@ -10,21 +10,18 @@ const Test = require('../class/test')
 // router.get Створює нам один ентпоїнт
 
 // ↙️ тут вводимо шлях (PATH) до сторінки
-router.get('/', function (req, res) {
+router.get('/test2', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
   res.render('index', {
     // вказуємо назву контейнера
-    name: 'index', //name дозволяє підключити стилі (index.scss), скрипт(index.js) з цього контейнера
+    name: 'index',
     // вказуємо назву компонентів
     component: ['heading'],
 
-    //Я: підключаємо layout (якщо не default!)
-    // layout: 'layoutName',
-
     // вказуємо назву сторінки
-    title: 'Назва сторінки',
+    title: 'Назва сторінки - test2',
     // ... сюди можна далі продовжувати додавати потрібні технічні дані, які будуть використовуватися в layout
 
     // вказуємо дані,
